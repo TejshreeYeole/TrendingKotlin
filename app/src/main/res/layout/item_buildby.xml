@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/person"/>
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team Name"
+            android:paddingTop="@dimen/dimen_10"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_16"
+            android:layout_toRightOf="@+id/profile_image"/>
+
+    <TextView
+            android:id="@+id/tv_href"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team Name"
+            android:paddingTop="@dimen/dimen_10"
+            android:textColor="@android:color/black"
+            android:autoLink="web"
+            android:textSize="@dimen/textsize_14"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_below="@+id/tv_name"/>
+
+
+</RelativeLayout>
